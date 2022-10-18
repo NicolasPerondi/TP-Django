@@ -1,0 +1,39 @@
+ {% extends 'core/base.html' %}
+
+{% block title%}Home{% endblock%}
+{% load static %}
+<link  href="{% static 'core/css/style.css' %}" rel="stylesheet">  
+
+        {% block content %}
+        <section>
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'core/img/carousel/dia do cachorro.png' %}" class="d-block w-100" alt="...">
+              </div>
+              <a href="formulario_de_adopcion.html"><div class="carousel-item">
+                <img src="{% static 'core/img/carousel/dia do cachorro (1).png' %}" class="d-block w-100" alt="...">
+              
+              </div></a>
+              <div class="carousel-item">
+                <img src="img/carousel/dia do cachorro (2).png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+           <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">próximo</span>
+            </button>
+          </div>
+
+
+        </section>
+        <article class="txt_adopcion">
+            <h3>¿Quienes sómos?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet facilis doloribus ad laboriosam ea mollitia iusto sed nostrum repellendus magni fuga, quod iure molestias recusandae officia sint. Soluta, ipsa. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi commodi debitis sint! Molestias eveniet officiis, corporis debitis molestiae fugiat ad. Unde officiis nostrum sint, ea voluptatem ratione eos corporis aliquid?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt magni ut nihil iste incidunt et unde. Quae maxime vel nulla error recusandae accusamus doloribus incidunt illo deleniti laboriosam? Cum, blanditiis?</p>
+        </article>
+
+          {% endblock%}

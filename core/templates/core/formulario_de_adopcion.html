@@ -1,0 +1,57 @@
+{% extends 'core/base.html' %}
+
+{% block title%}Formulario de Contacto{% endblock%}
+{% load static %}
+<link  href="{% static 'core/css/style.css' %}" rel="stylesheet">  
+
+{% block content %}
+        <div class="contenedor">
+            <div class="cabecera">
+                <h2 id="form_pres">llena el formulario y pronto te ayudaremos con la adopción segun los datos presentados!</h2>
+            </div>
+            <form id="Form_Adopcion"   action="procesar.php" method="">
+        
+                <div class="form-control">
+                    <input id="nombre" type="text" required autofocus placeholder="nombre y apellido">
+                    <p></p>                
+                </div>
+        
+                <div class="form-control">
+                    <input id="email" required type="email" required placeholder="E-mail">
+                    <p></p>                
+                </div>
+
+                <div class="form-control">
+                    <input id="tel" required type="tel" required placeholder="Teléfono">
+                    <p></p>                
+                </div>
+
+                <div class="form-control">
+                    <for=opciones>¿Cual animal querés?</label>
+                    <input id="gato-o-perro" list="opciones" required type="datalist" required >
+                    <datalist id="opciones">
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                    </datalist>
+                    <p></p>                
+                </div>
+
+                <div class="form-control" >
+                    <for=mensaje>ahora conta porqué quieres adoptar.</label>
+                    <textarea id="mensaje" required="required" data-lt-tmp-id="lt-737125" spellcheck="false" data-gramm="false" style="width: 281px; height: 146px;"></textarea>
+                    <p></p>                
+                </div>
+
+               
+                
+                
+                
+                
+        
+                <button type="button" class="efecto">Enviar</button>
+            </form>
+        </div>
+        <script src="{% static 'core/js/app.js' %}"></script>
+
+        {% endblock %}
+
